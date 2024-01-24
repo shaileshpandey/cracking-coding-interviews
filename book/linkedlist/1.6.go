@@ -5,7 +5,6 @@ import (
 )
 
 func isPalindrome(head *ListNode) bool {
-
 	slow := head
 	fast := head
 

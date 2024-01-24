@@ -36,6 +36,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 
 	return head.Next
 }
+
 func Call1_5() {
 	tests := map[int]InOutArray{
 		1: {
