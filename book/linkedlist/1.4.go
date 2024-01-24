@@ -55,6 +55,7 @@ func displayList(head *ListNode) {
 		temp = temp.Next
 	}
 }
+
 func Call1_4() {
 	tests := map[int]InOutArray{
 		3: {
