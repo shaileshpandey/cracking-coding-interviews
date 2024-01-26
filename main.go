@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"main/fileops"
 )
 
@@ -27,5 +25,6 @@ func main() {
 	// stackandqueue.Call3_2()
 
 	// fmt.Println(fileops.ReadIPS("ip-input.txt"))
-	fmt.Println(fileops.ReadIPS2("ip-input.txt"))
+	// fmt.Println(fileops.ReadIPS2("ip-input.txt"))
+	fileops.FindFamilyWithMemberCount()
 }
