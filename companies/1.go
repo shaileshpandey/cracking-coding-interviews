@@ -27,7 +27,7 @@
 // and outputs each ip address and how many blocklists that ip is listed on.
 // 12.13.14.15 = 2
 
-package proofpoint
+package companies
 
 import (
 	"bufio"
@@ -41,7 +41,7 @@ func FindBackLists(filePath string) map[string][]string {
 	ipsWithWords := map[string][]string{}
 
 	file, _ := os.Open(filePath)
-	//fmt.Println(err)
+	// fmt.Println(err)
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
 
