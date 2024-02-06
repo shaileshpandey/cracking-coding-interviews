@@ -10,6 +10,7 @@ import (
 func ReadFile() []string {
 	wordsWithFrequency := map[string]int{}
 	file, _ := os.Open("./companies/bigfile.txt")
+	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	scanner.Split(bufio.ScanWords)
 	for scanner.Scan() {
