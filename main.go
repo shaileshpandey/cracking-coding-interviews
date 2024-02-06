@@ -2,20 +2,10 @@ package main
 
 import (
 	"fmt"
-
-	"main/companies"
+	"main/proofpoint"
 )
 
 func main() {
-	// ipsWithWords := companies.FindBackLists("./companies/ip.txt")
-	// companies.Display(ipsWithWords)
-	// var s interfaces.Shape = interfaces.Square{Length: 5}
-	// var r interfaces.Shape = interfaces.Rectangle{Length: 5, Width: 6}
-
-	// fmt.Printf("Square Area is %d\n", s.Area())
-	// fmt.Printf("Rectangle Area is %d\n", r.Area())
-	// var text chan string = make(chan string)
-	// go channels.SendAMessage(text)
-	// channels.ReceiveAMessage(text)
-	fmt.Println(companies.ReadFile())
+	words := proofpoint.ReadWords("./proofpoint/aliceinwonderland.txt")
+	fmt.Println(fmt.Sprintf("Number of words =>%d", len(words)))
 }
