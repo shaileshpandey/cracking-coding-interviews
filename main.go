@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+
+	"main/companies"
+)
+
 func main() {
 	// ipsWithWords := companies.FindBackLists("./companies/ip.txt")
 	// companies.Display(ipsWithWords)
@@ -11,4 +17,5 @@ func main() {
 	// var text chan string = make(chan string)
 	// go channels.SendAMessage(text)
 	// channels.ReceiveAMessage(text)
+	fmt.Println(companies.ReadFile())
 }
